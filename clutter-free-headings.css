@@ -1,0 +1,41 @@
+.markdown-preview-view h1, .cm-header-1 { font-size: 2.33rem; }
+.markdown-preview-view h2, .cm-header-2 { font-size: 1.83rem }
+.markdown-preview-view h3, .cm-header-3 { font-size: 1.5rem; }
+.markdown-preview-view h4, .cm-header-4 { font-size: 1.33rem; }
+.markdown-preview-view h5, .cm-header-5 { font-size: 1.16rem; }
+.markdown-preview-view h6, .cm-header-6 { font-size: 1rem; }
+
+.cm-formatting-header-1 { font-size: 2rem; }
+.cm-formatting-header-2 { font-size: 1.16rem; }
+.cm-formatting-header-3 { font-size: 0.83rem; }
+.cm-formatting-header-4 { font-size: 0.64rem; }
+.cm-formatting-header-5 { font-size: 0.52rem; }
+.cm-formatting-header-6 { font-size: 0.44rem; }
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header::before {
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: none;
+  width:0;
+  overflow:visible;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header-1::before {
+  content: 'H1';
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header-2::before {
+  content: 'H2';
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header-3::before {
+  content: 'H3';
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header-4::before {
+  content: 'H4';
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header-5::before {
+  content: 'H5';
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header-6::before {
+  content: 'H6';
+}

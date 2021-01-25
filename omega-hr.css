@@ -1,0 +1,39 @@
+/* XX. Obsidianite-inspired omega HRs */
+.markdown-preview-view,
+.markdown-source-view {
+  --fancy-hr-bg: var(--background-primary);
+  --fancy-hr-fg: var(--text-accent);
+}
+
+.workspace-tabs .markdown-preview-view,
+.workspace-tabs .markdown-source-view {
+  --fancy-hr-bg: var(--background-secondary);
+}
+
+.CodeMirror-code> :not(.CodeMirror-activeline) .cm-hr {
+  color:transparent;
+}
+
+.markdown-preview-view hr,
+.CodeMirror-code> :not(.CodeMirror-activeline) .HyperMD-hr-bg {
+  opacity: 1;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to left, transparent, var(--fancy-hr-fg), transparent);
+}
+
+.markdown-preview-view hr::after,
+.CodeMirror-code> :not(.CodeMirror-activeline) .HyperMD-hr-bg::after {
+  content: "Ω";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0 0.5rem;
+  color: var(--fancy-hr-fg);
+  background-color: var(--fancy-hr-bg);
+}

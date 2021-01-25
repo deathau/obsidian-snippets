@@ -1,0 +1,35 @@
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-em:not(.cm-formatting-em),
+.cm-s-obsidian span.cm-strong,
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-formatting-strikethrough,
+.cm-s-obsidian span.cm-hmd-escape-backslash {
+  padding:0;
+}
+span.cm-formatting-em, span.cm-formatting-strong,
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-formatting-strikethrough,
+.cm-s-obsidian span.cm-hmd-escape-backslash {
+  font-size: 0.75em !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-em,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-strong,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-highlight,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-strikethrough,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-escape-backslash {
+  color: transparent !important;
+  background:none;
+}
+
+.cm-formatting-strikethrough {
+  text-decoration: none;
+}
+
+.cm-em.cm-formatting-em {
+  display: inline;
+  width: unset;
+  font-size: unset;
+  vertical-align: unset;
+}
