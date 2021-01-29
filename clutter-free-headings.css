@@ -12,6 +12,11 @@
 .cm-formatting-header-5 { font-size: 0.52rem; }
 .cm-formatting-header-6 { font-size: 0.44rem; }
 
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header {
+  color: transparent !important;
+  background:none;
+}
+
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header::before {
   display: inline-block;
   white-space: nowrap;
