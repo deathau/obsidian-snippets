@@ -59,6 +59,7 @@
   font-family: var(--default-font);
   font-size: 1rem;
   padding: 0;
+  background:none;
 }
 
 .app-container .markdown-preview-view pre.language-note-notice,
