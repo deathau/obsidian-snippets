@@ -65,7 +65,7 @@ It still leaves the space though, so as to prevent weirdness with cursor movemen
 
 
 ## Checkboxes
-<https://github.com/deathau/obsidian-snippets/blob/main/checkboxes.css>
+<https://github.com/deathau/obsidian-snippets/blob/main/checkbox.css>
 
 Checkboxes with different statuses (requires Obsidian 0.12.0+)
 
