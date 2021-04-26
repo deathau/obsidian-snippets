@@ -7,6 +7,7 @@ This is a collection of random snippets I've made. Hopefully it will grow over t
 - [Inline Block Embeds](#inline-block-embeds)
 - [Clutter-Free Headings](#clutter-free-headings)
 - [Clutter-Free Formatting](#clutter-free-formatting)
+- [Checkboxes](#checkboxes)
 
 ---
 
@@ -59,5 +60,15 @@ Formatting which is reduced and hides when not on the active line.
 It still leaves the space though, so as to prevent weirdness with cursor movement and selections.
 
 ![](./images/clutter-free-formatting.gif)
+
+---
+
+
+## Checkboxes
+<https://github.com/deathau/obsidian-snippets/blob/main/checkboxes.css>
+
+Checkboxes with different statuses (requires Obsidian 0.12.0+)
+
+![](./images/checkboxes.png)
 
 ---
