@@ -30,14 +30,19 @@
   text-align: center;
   font-weight: 900;
   line-height: 15px;
-  width: 12px;
-  left: 2px;
-  right: 2px;
+  width:12px;
+  left:2px;
+  right:2px;
+}
+
+.markdown-preview-view ul>li.task-list-item {
+  font-weight: normal;
+  color: var(--text-normal);
 }
 
 /* SVG check mark for done ('- [x]') */
-.markdown-preview-view li[data-task="x"] .task-list-item-checkbox:checked::before,
-.markdown-preview-view li[data-task="X"] .task-list-item-checkbox:checked::before {
+.markdown-preview-view li[data-task="x"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="X"]>.task-list-item-checkbox:checked::before {
   content: ' ';
   top: 2px;
   bottom: 2px;
@@ -46,58 +51,52 @@
 }
 
 /* SVG chevron right for deferred/scheduled ('- [>]') */
-.markdown-preview-view li[data-task=">"] .task-list-item-checkbox:checked::before {
+.markdown-preview-view li[data-task=">"]>.task-list-item-checkbox:checked::before {
   content: '';
-  top: 2px;
-  bottom: 2px;
+  top:2px;
+  bottom:2px;
   background-color: white;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.12 7L3.26667 11.76L4.57333 13.0667L10.7333 7L4.57333 0.933332L3.26667 2.24L8.12 7Z'/%3E%3C/svg%3E");
 }
 
 /* SVG line for cancelled/non-task ('- [-]') */
-.markdown-preview-view li[data-task="-"] .task-list-item-checkbox:checked::before {
+.markdown-preview-view li[data-task="-"]>.task-list-item-checkbox:checked::before {
   content: '';
-  top: 2px;
-  bottom: 2px;
+  top:2px;
+  bottom:2px;
   background-color: white;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='6.5' width='13' height='1'/%3E%3C/svg%3E");
 }
-
 /* greyed-out background colour for cancelled/non-task ('- [-]') */
-.markdown-preview-view li[data-task="-"] .task-list-item-checkbox:checked,
-.markdown-preview-view li[data-task="—"] .task-list-item-checkbox:checked {
+.markdown-preview-view li[data-task="-"]>.task-list-item-checkbox:checked {
   background-color: var(--text-faint);
 }
 
 /* '?' for question/more info task ('- [?]') */
-.markdown-preview-view li[data-task="?"] .task-list-item-checkbox:checked::before {
+.markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked::before {
   content: '?';
 }
-
 /* text style for question/more info task ('- [?]') */
 .markdown-preview-view ul>li[data-task="?"].task-list-item.is-checked {
   color: var(--text-normal);
   text-decoration: none;
 }
-
 /* yellow background colour for question/more info task ('- [?]') */
-.markdown-preview-view li[data-task="?"] .task-list-item-checkbox:checked {
+.markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked{
   background-color: #A99400;
 }
 
 /* '!' for important task ('- [!]') */
-.markdown-preview-view li[data-task="!"] .task-list-item-checkbox:checked::before {
+.markdown-preview-view li[data-task="!"]>.task-list-item-checkbox:checked::before {
   content: '!';
 }
-
 /* text style for important task ('- [!]') */
 .markdown-preview-view ul>li[data-task="!"].task-list-item.is-checked {
   color: var(--text-normal);
   text-decoration: none;
   font-weight: 900;
 }
-
 /* red background colour for important task ('- [!]') */
-.markdown-preview-view li[data-task="!"] .task-list-item-checkbox:checked {
+.markdown-preview-view li[data-task="!"]>.task-list-item-checkbox:checked {
   background-color: #a90000;
 }
