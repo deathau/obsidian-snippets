@@ -1,16 +1,17 @@
 body {
   --fluro-yellow-rgb: 255, 255, 0;
+  --fluro-pink-rgb: 255, 0, 255;
   --fluro-purple-rgb: 200, 0, 255;
+  --fluro-coral-rgb: 240, 128, 128;
   --fluro-blue-rgb: 0, 255, 255;
   --fluro-green-rgb: 0, 255, 0;
-  --fluro-coral-rgb: 240, 128, 128;
   --text-highlight-rgb: var(--fluro-purple-rgb);
 }
 
 mark.yellow {
   --text-highlight-rgb: var(--fluro-yellow-rgb);
 }
-mark.pink {
+mark.purple {
   --text-highlight-rgb: var(--fluro-purple-rgb);
 }
 mark.blue {
@@ -21,6 +22,9 @@ mark.green {
 }
 mark.coral {
   --text-highlight-rgb: var(--fluro-coral-rgb);
+}
+mark.pink {
+  --text-highlight-rgb: var(--fluro-pink-rgb);
 }
 
 mark,
