@@ -5,7 +5,7 @@ body {
   --fluro-coral-rgb: 240, 128, 128;
   --fluro-blue-rgb: 0, 255, 255;
   --fluro-green-rgb: 0, 255, 0;
-  --text-highlight-rgb: var(--fluro-yellow-rgb);
+  --text-highlight-rgb: var(--fluro-purple-rgb);
 }
 
 mark.yellow {
